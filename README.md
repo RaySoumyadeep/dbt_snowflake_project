@@ -1,3 +1,6 @@
+![alt text](https://github.com/RaySoumyadeep/dbt_snowflake_project/blob/main/image_for_readme.webp)
+
+
 In this project, we will see how to use dbt with Snowflake. dbt (data build tool) does the T in ELT (Extract, Load, Transform) processes. It doesn’t extract or load data, but it is extremely good at transforming data that’s already loaded into your warehouse.
 
 The data used is from the SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.
