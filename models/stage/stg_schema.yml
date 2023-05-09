@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: stg_customer
+    description: This table contains information about customers
+    columns:
+      - name: C_CUSTOMER_SK
+      - name: C_CUSTOMER_ID
+        description: This is a unique identifier for customer
+      - name: C_CURRENT_CDEMO_SK
+      - name: C_CURRENT_HDEMO_SK
+      - name: C_CURRENT_ADDR_SK
+      - name: C_FIRST_SHIPTO_DATE_SK
+      - name: C_FIRST_SALES_DATE_SK
+      - name: C_SALUTATION
+      - name: C_FIRST_NAME
+      - name: C_LAST_NAME
+      - name: C_PREFERRED_CUST_FLAG
+      - name: C_BIRTH_DAY
+      - name: C_BIRTH_MONTH
+      - name: C_BIRTH_YEAR
+      - name: C_BIRTH_COUNTRY
+      - name: C_LOGIN
+      - name: C_EMAIL_ADDRESS
+
+  - name: stg_catalog_sales
+    description: This table contains information about catalog sales
+    columns:
+      - name: customer_sales_sold_date
+      - name: customer_sales_sold_time_am_pm
+      - name: customer_sales_sold_time_sub_shift
+      - name: customer_sales_ship_date
+      - name: income_band_bound
+      - name: household_buy_potential
+      - name: item_sk
+      - name: order_number
+      - name: quantity
+      - name: wholesale_cost
+      - name: list_price
+      - name: sales_price
+      - name: ext_discount_amount
+      - name: ext_sales_price
+      - name: ext_wholesale_cost
+      - name: ext_list_price
+      - name: ext_tax
+      - name: coupon_amount
+      - name: ext_ship_cost
+      - name: net_paid
+      - name: net_paid_income_tax
+      - name: net_paid_income_ship
+      - name: net_paid_income_ship_tax
+      - name: net_amount
+
+  - name: stg_household_demographics
+    description: This table contains information about household_demographics
+    columns:
+      - name: HD_DEMO_SK
+      - name: HD_INCOME_BAND_SK
+      - name: HD_BUY_POTENTIAL
+      - name: HD_DEP_COUNT
+      - name: HD_VEHICLE_COUNT
+      - name: income_band_bound
+
+  - name: stg_income_band
+    description: This table contains information about income band of customers
+    columns:
+      - name: income_band_sk
+      - name: income_band_bound
