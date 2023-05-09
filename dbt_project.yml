@@ -34,5 +34,29 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   demo_dbt:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    base:
+      # The following does not have to be segmented, but I did it
+      # for the sake of practicing "organization" in this project.
+      customers:
+        schema: customers
+        materialized: view
+        tags: ["customer_info", "base"]
+
+      website:
+        schema: website
+        materialized: view
+        tags: ["website_info", "base"]
+      other:
+        schema: misc
+        materialized: view
+        tags: ["misc_info", "base"]
+    stage:
+        schema: stage
+        materialized: view
+    models:
+      fct:
+        schema: models
+        materialized: table
+      dim:
+        schema: models
+        materialized: table
