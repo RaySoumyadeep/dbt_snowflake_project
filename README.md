@@ -1,4 +1,9 @@
-This is a starter dbt project 
+In this project, we will see how to use dbt with Snowflake. dbt (data build tool) does the T in ELT (Extract, Load, Transform) processes. It doesn’t extract or load data, but it is extremely good at transforming data that’s already loaded into your warehouse.
+
+The data used is from the SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.
+It consists of customer, catalog_sales, household_demographics, income_band, store_returns, store tables.
+
+The models have been created 
 
 Try running the following commands:
 - dbt run
