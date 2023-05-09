@@ -6,7 +6,7 @@ In this project, we will see how to use dbt with Snowflake. dbt (data build tool
 The data used is from the SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.
 It consists of customer, catalog_sales, household_demographics, income_band, store_returns, store tables.
 
-The models have been created 
+For more info about, check out my article: https://medium.com/@soumyadeepray95/dbt-data-build-tool-data-transformation-unlike-anything-else-8f90b7cae847
 
 Try running the following commands:
 - dbt run
